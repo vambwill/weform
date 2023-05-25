@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+    ". . . . ."
+    ". pets . form ."
+    ". pets . form ."
+    ". . . . ."
+    ;
+
+    gap: 3rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: pets;
+}
+
+:root {
+    font-size: 62.5%;
+}
+a {
+    
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    
+
+}
+
+aside img {
+    width: 300px;
+    height: 250px;
+}
+
+aside h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    margin-top: 5.5rem;
+}
+
+
+aside h1 span, main h2 span {
+    color: rgb(224, 153, 153);
+}
+
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: solid 0.2px rgba(0, 0, 0, 0.15);
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
+}
+
+
+main h2 {
+    width: 43rem;
+    font-size: 3.4rem;
+    font-weight: 400;
+
+}
+
+main .action {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.0rem;
+}
+
+main .action a {
+    background-color: #35e6e9;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+main .action a + a {
+    background-color: rgb(231, 150, 162);
+    margin-top: 30px;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+
+main footer p {
+    margin-top: 8rem;
+    font-size: 1.6rem;
+}
+
+main footer a {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    display: block;
+}
